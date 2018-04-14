@@ -36,15 +36,15 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 10 - 1; i >= 0; i--)
         {  
-            PokeBall.transform.localScale = new Vector3((float)i / 10, (float)i / 10, (float)i / 10);
-            gameObject.transform.localScale = new Vector3((float)i / 10, (float)i / 10, (float)i / 10);
+            PokeBall.transform.localScale = new Vector3((float)i / 20, (float)i / 20, (float)i / 20);
+            gameObject.transform.localScale = new Vector3((float)i / 20, (float)i / 20, (float)i / 20);
             yield return new WaitForSeconds(.1f);
         }
         text.text = "Let's see if you caught the pokemon...";
         yield return new WaitForSeconds(2f);
         for (int i = 0; i <= 10; i++)
         {
-            Pekatchu.transform.localScale = new Vector3((float)i / 10, (float)i / 10, (float)i / 10);
+            Pekatchu.transform.localScale = new Vector3((float)i / 20, (float)i / 20, (float)i / 20);
             yield return new WaitForSeconds(.05f);
         }
         yield return new WaitForSeconds(2f);
